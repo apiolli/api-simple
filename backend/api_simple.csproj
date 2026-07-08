@@ -22,12 +22,4 @@
     <PackageReference Include="Scalar.AspNetCore" Version="2.16.10" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Contracts\" />
-    <Folder Include="Mapping\" />
-    <Folder Include="DTOs\" />
-    <Folder Include="Repositories\" />
-    <Folder Include="Services\" />
-  </ItemGroup>
-
 </Project>
