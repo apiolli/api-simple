@@ -21,15 +21,15 @@ builder.Services.AddScoped<IMascotaService, MascotaService>();
 builder.Services.AddScoped<IPersonaRepository, PersonaRepository>();
 builder.Services.AddScoped<IPersonaService, PersonaService>();
 
-//builder.Services.AddCors(options =>
-//{
-//    options.AddPolicy("PermitirFrontend", policy =>
-//    {
-//        policy.WithOrigins("http://localhost:5173")
-//              .AllowAnyHeader()
-//              .AllowAnyMethod();
-//    });
-//});
+builder.Services.AddCors(options =>
+{
+   options.AddPolicy("PermitirFrontend", policy =>
+   {
+       policy.WithOrigins("http://localhost:5173")
+             .AllowAnyHeader()
+             .AllowAnyMethod();
+   });
+});
 
 var app = builder.Build();
 
@@ -39,7 +39,7 @@ if (app.Environment.IsDevelopment())
     app.MapScalarApiReference();
 }
 
-//app.UseCors("PermitirFrontend");
+app.UseCors("PermitirFrontend");
 
 app.UseHttpsRedirection();
 app.UseAuthorization();

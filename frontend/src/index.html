@@ -1,13 +1,61 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="bg-slate-300">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>frontend</title>
+    <link rel="stylesheet" href="../public/styles.css" />
+    <title>API SIMPLE</title>
   </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
+  <body
+    class="font-poppins flex-col flex items-center justify-center p-5 w-11/12 h-11/12 m-auto mt-40"
+  >
+    <h1 class="text-4xl font-light text-black">Practica API Simple</h1>
+    <div class="w-10/12 rounded-2xl h-full p-10 gap-5 grid">
+      <div class="botones w-full justify-around items-center flex gap-10">
+        <button
+          class="btn btn-primary rounded-2xl p-5 w-4/12 text-lg bg-black"
+          id="btn-persona"
+        >
+          Datos Personales
+        </button>
+        <button
+          class="btn btn-primary rounded-2xl p-5 w-4/12 text-lg bg-black"
+          id="btn-perro"
+        >
+          Lista de perros
+        </button>
+      </div>
+      <table class="table bg-white text-black border border-gray-300">
+        <thead class="text-black">
+          <tr>
+            <th>ID</th>
+            <th>Matricula</th>
+            <th>Nombre</th>
+            <th>Carrera</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>1</th>
+            <td>Cy Ganderton</td>
+            <td>Quality Control Specialist</td>
+            <td>Blue</td>
+          </tr>
+          <tr>
+            <th>2</th>
+            <td>Hart Hagerty</td>
+            <td>Desktop Support Technician</td>
+            <td>Purple</td>
+          </tr>
+          <tr>
+            <th>3</th>
+            <td>Brice Swyre</td>
+            <td>Tax Accountant</td>
+            <td>Red</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <script src="main.js"></script>
   </body>
 </html>
