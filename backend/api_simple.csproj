@@ -23,9 +23,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Entities\" />
     <Folder Include="Contracts\" />
     <Folder Include="Mapping\" />
+    <Folder Include="DTOs\" />
     <Folder Include="Repositories\" />
     <Folder Include="Services\" />
   </ItemGroup>
