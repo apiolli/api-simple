@@ -17,7 +17,7 @@ namespace api_simple.Services
 
         public async Task<IEnumerable<MascotaDTO>> ObtenerMascotas()
         {
-            var mascotas = repo.GetAllAsync();
+            var mascotas = await repo.GetAllAsync();
             return mapper.Map<IEnumerable<MascotaDTO>>(mascotas);
         }
 
